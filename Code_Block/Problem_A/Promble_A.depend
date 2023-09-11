@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1694408950 source:c:\users\e1406\documents\computer_architecture\quiz_1_practice\code_block\promble_a\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+
