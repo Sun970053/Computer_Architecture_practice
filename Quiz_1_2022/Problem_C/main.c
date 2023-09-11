@@ -15,7 +15,7 @@ static inline uint32_t end_htobe32(uint32_t n)
         int i;
         char c;
     } u = {1};
-    return u.c ? C03 : C04;
+    return u.c ? 0 : 1;
 }
 
 /* Host to Little Endian 32-bit */
@@ -25,7 +25,7 @@ static inline uint32_t end_htole32(uint32_t n)
         int i;
         char c;
     } u = {1};
-    return u.c ? C05 : C06;
+    return u.c ? 1 : 0;
 }
 
 int main()

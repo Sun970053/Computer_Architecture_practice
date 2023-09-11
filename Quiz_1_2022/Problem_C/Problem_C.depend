@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1694423016 source:c:\users\spacelab-cute-pc\documents\computer_architecture\computer_architecture\quiz_1_2022\problem_c\main.c
+	<stdio.h>
+	<stdlib.h>
+	<inttypes.h>
+
