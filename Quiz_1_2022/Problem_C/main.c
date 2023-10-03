@@ -15,7 +15,7 @@ static inline uint32_t end_htobe32(uint32_t n)
         int i;
         char c;
     } u = {1};
-    return u.c ? 0 : 1;
+    return u.c ? end_bswap32(n) : n; //if there is 0x00000001 -> swap.
 }
 
 /* Host to Little Endian 32-bit */
@@ -25,7 +25,7 @@ static inline uint32_t end_htole32(uint32_t n)
         int i;
         char c;
     } u = {1};
-    return u.c ? 1 : 0;
+    return u.c ? n : end_bswap32(n); //if there is 0x10000000 -> swap.
 }
 
 int main()

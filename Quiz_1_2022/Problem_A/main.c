@@ -33,8 +33,8 @@ void insert_head(xorlist_t **head, int data)
         new_node->link = (intptr_t) NULL;
     } else {
         /* Update original link of head node */
-        (*head)->link = (intptr_t)(xorlist_t *)(*head)->link ^ (intptr_t) new_node; /* A01 Fill Your Code */
-        new_node->link = (intptr_t)(xorlist_t *)(*head); /* A02 Fill Your Code */
+        (*head)->link = (intptr_t)(*head)->link ^ (intptr_t) new_node; /* A01 Fill Your Code not need (xorlist_t *)*/
+        new_node->link = (intptr_t)(*head); /* A02 Fill Your Code */
     }
 
     *head = new_node;
